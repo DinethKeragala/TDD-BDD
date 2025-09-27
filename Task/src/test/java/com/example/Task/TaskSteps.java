@@ -38,6 +38,7 @@ public class TaskSteps {
 
     @Given("a task with title {string} exists")
     public void a_task_with_title_exists(String title) {
+        taskService = new TaskService();
         task = new Task(title);
         task = taskService.addTask(task);
     }
