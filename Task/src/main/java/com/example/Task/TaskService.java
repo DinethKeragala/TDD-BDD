@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 class TaskService {
-    private Map<Long, Task> tasks = new HashMap<>();
-    private AtomicLong idGenerator = new AtomicLong();
+    private final Map<Long, Task> tasks = new HashMap<>();
+    private final AtomicLong idGenerator = new AtomicLong();
 
     Task addTask(Task task) {
         long id = idGenerator.incrementAndGet();
@@ -19,5 +19,4 @@ class TaskService {
     Task getTaskById(Long id) {
         return tasks.get(id);  // Retrieve task from map
     }
-
 }
