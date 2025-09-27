@@ -20,7 +20,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<junit.jupiter.version>5.12.2</junit.jupiter.version>
 		<cucumber.version>7.29.0</cucumber.version>
 	</properties>
